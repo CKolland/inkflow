@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "inkflow"
+version = "1.0.0"
+description = "A package to dynamically insert data in SVG templates via placeholders."
+authors = [{ name = "Christian Kolland", email = "christian.kolland@stud.uni-frankfurt.de" }]
+license = { text = "MIT" }
+readme = "README.md"
+repository = "https://github.com/CKolland/inkflow"
+keywords = ["CSV", "SVG", "PDF", "templates"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.black]
+line-length = 88
+
+[tool.pytest]
+addopts = "-v"
